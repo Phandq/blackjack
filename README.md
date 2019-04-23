@@ -13,7 +13,7 @@ The dealer will continue to hit and will try to achieve 17 or higher.
 ## The game
 ```
 -------------------------
-| Welcome to BlackJack! |
+| Welcome to Blackjack! |
 -------------------------
 
 Dealer has:
