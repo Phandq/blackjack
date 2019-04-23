@@ -12,30 +12,30 @@ The dealer will continue to hit and will try to achieve 17 or higher.
 
 ## The game
 ``
--------------------------
-| Welcome to BlackJack! |
--------------------------
+  -------------------------
+  | Welcome to BlackJack! |
+  -------------------------
 
-Dealer has:
- K of ❤
+  Dealer has:
+   K of ❤
 
-You have:
-['2 of ♦', '5 of ♣'] for total of 7
+  You have:
+  ['2 of ♦', '5 of ♣'] for total of 7
 
-Do you want to [H]it, [S]tand, or [Q]uit: h
+  Do you want to [H]it, [S]tand, or [Q]uit: h
 
-Dealer has:
- K of ❤
+  Dealer has:
+   K of ❤
 
-You have:
-['2 of ♦', '5 of ♣', 'K of ♠'] for total of 17
+  You have:
+  ['2 of ♦', '5 of ♣', 'K of ♠'] for total of 17
 
-Do you want to [H]it, [S]tand, or [Q]uit: h
+  Do you want to [H]it, [S]tand, or [Q]uit: h
 
-Dealer has:
- ['K of ❤', '8 of ♠']
+  Dealer has:
+   ['K of ❤', '8 of ♠']
 
-You have:
-['2 of ♦', '5 of ♣', 'K of ♠', '4 of ♦'] for total of 21
-You got a BlackJack!
+  You have:
+  ['2 of ♦', '5 of ♣', 'K of ♠', '4 of ♦'] for total of 21
+  You got a BlackJack!
 ``
