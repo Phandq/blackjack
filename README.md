@@ -11,7 +11,7 @@ Once your cards has been delt, you have the following options:
 The dealer will continue to hit and will try to achieve 17 or higher.
 
 ## The game
-``
+```
   -------------------------
   | Welcome to BlackJack! |
   -------------------------
@@ -38,4 +38,4 @@ The dealer will continue to hit and will try to achieve 17 or higher.
   You have:
   ['2 of ♦', '5 of ♣', 'K of ♠', '4 of ♦'] for total of 21
   You got a BlackJack!
-``
+```
