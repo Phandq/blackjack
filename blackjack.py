@@ -47,14 +47,14 @@ def playingHands(deck):
     return [dealerHand, playerHand]
 
 # Result from hit
-def hit(dealer, player, playerHand):
+def hit(dealer, dealerCount, player, playerHand):
     if(playerHand > 21):
-        print("\nDealer has: \n", dealer)
+        print("\nDealer has: \n" + str(dealer) + " for total of " + str(dealerCount))
         print("\nYou have: \n" + str(player) + " for total of " + str(playerHand))
         print("You busted, you lose.\n")
         playAgain()
     elif(playerHand == 21):
-        print("\nDealer has: \n", dealer)
+        print("\nDealer has: \n" + str(dealer) + " for total of " + str(dealerCount))
         print("\nYou have: \n" + str(player) + " for total of " + str(playerHand))
         print("You got a BlackJack!\n")
         playAgain()
@@ -81,7 +81,7 @@ def playAgain():
 
 def game():
     print("-------------------------")
-    print("| Welcome to BlackJack! |")
+    print("| Welcome to Blackjack! |")
     print("-------------------------")  
     playerChoice = 0
     deck = createDeck()
@@ -100,7 +100,7 @@ def game():
         if(playerChoice == 'h'):
             player.append(deck.pop())
             playerCount = cardCount(player)
-            hit(dealer, player, playerCount)
+            hit(dealer, dealerCount, player, playerCount)
         # Player "stand" (end their turn)
         elif playerChoice == 's':
             # Dealer will hit until the cards total 17 or more points
