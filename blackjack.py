@@ -56,7 +56,7 @@ def hit(dealer, dealerCount, player, playerHand):
     elif(playerHand == 21):
         print("\nDealer has: \n" + str(dealer) + " for total of " + str(dealerCount))
         print("\nYou have: \n" + str(player) + " for total of " + str(playerHand))
-        print("You got a BlackJack!\n")
+        print("You got a Blackjack!\n")
         playAgain()
 
 # Result from stand
@@ -64,7 +64,7 @@ def stand(dealerHand, playerHand):
     if(playerHand == dealerHand):
         print("No one wins\n")
     elif(dealerHand == 21):
-        print("You lose, Dealer got a BlackJack.\n")
+        print("You lose, Dealer got a Blackjack.\n")
     elif(dealerHand > 21):
         print("Dealer busted, you win!\n")
     elif(playerHand > dealerHand):
@@ -83,11 +83,12 @@ def game():
     print("-------------------------")
     print("| Welcome to Blackjack! |")
     print("-------------------------")  
-    playerChoice = 0
+    playerChoice = "p"
     deck = createDeck()
     hands = playingHands(deck)
     dealer = hands[0]
     player = hands[1]
+    
 
     while(playerChoice != "q"):
         dealerCount = cardCount(dealer)
@@ -102,7 +103,7 @@ def game():
             playerCount = cardCount(player)
             hit(dealer, dealerCount, player, playerCount)
         # Player "stand" (end their turn)
-        elif playerChoice == 's':
+        elif(playerChoice == 's'):
             # Dealer will hit until the cards total 17 or more points
             while dealerCount <= 16:
                 dealer.append(deck.pop())
@@ -110,9 +111,9 @@ def game():
             print("\nDealer has: \n", str(dealer) + "  for total of ", dealerCount)
             stand(dealerCount, playerCount)
             playAgain()
-            exit()
-        elif playerChoice == 'q':
+        elif(playerChoice == 'q'):
             print("\nThanks for playing!")
+            exit()
 
 # Initalize game
 game()
